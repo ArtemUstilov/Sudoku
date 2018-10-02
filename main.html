@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sudoku</title>
+  <link href="main.css" rel="stylesheet">
+  <script src="algorithm.js"></script>
+  </head>
+  <body>
+  <p>Enter values</p>
+   <div class="box">
+     <div class="res">
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+      <div class="square">
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+        <div class="cell"><input type="text" class="num" maxlength="1"></div>
+      </div>
+     </div>
+    </div>
+  <button class="Fill">Fill</button>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.Fill').click(() => {
+        let arr = [[],[],[],[],[],[],[],[],[]]
+        $('.num').each((ind, el)=>{
+          let val = el.value.length<1?'*':el.value
+         let i = 0;
+          if(ind>=27)i=3;
+          if(ind>=54)i=6
+            let t = ind % 9
+            if(t<3)
+              arr[i].push(val)
+            else if(t<6)
+              arr[i+1].push(val)
+            else
+              arr[i+2].push(val)
+        })
+        let res = getSolution(arr)
+        // let res = arr
+        let reversRes = [[],[],[],[],[],[],[],[],[]]
+        res.join().split(",").forEach((x,ind)=>{
+          let i = 0;
+          if(ind>=27)i=3;
+          if(ind>=54)i=6
+            let t = ind % 9
+            if(t<3)
+              reversRes[i].push(x)
+            else if(t<6)
+              reversRes[i+1].push(x)
+            else
+              reversRes[i+2].push(x)
+        })
+        let rr = reversRes.join().split(",")
+        $('.num').each((ind,el)=>el.value=rr.shift())
+      })
+    });
+  </script>
+  
+</body>
+</html>
